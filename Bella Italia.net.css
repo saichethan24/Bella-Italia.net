@@ -1,0 +1,437 @@
+nav
+{
+    /* position: fixed; */
+    width: 100vw;
+    z-index: 1;
+}
+
+nav >li
+{
+    position: relative;
+    left: -2rem;
+    padding-left: 10px;
+}
+*
+{
+    font-family: 'Lato';
+}
+#streetfurniture p::before
+{
+    content: "";
+    background: #000;
+    height: 1px;
+    width: 490px;
+    display: block;
+    position: absolute;
+    left: 180px;
+    margin-top: 11px;
+
+}
+
+#streetfurniture p::after
+{
+    content: "";
+    background: black;
+    height: 1px;
+    width: 490px;
+    display: block;
+    position: absolute;
+    left: 840px;
+    margin-top: -13px;
+}
+
+#slider img
+{
+    height: 40rem;
+    /* width: 100%; */
+}
+
+#slider_container
+{
+    margin: 25rem 0rem 10rem 0rem;
+    width: 90vw;
+    /* position: relative; */
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    /* top: 50%; */
+    /* left: 50%; */
+    overflow: hidden;
+
+}
+
+
+
+#slider 
+{
+    display: flex;
+    width: 100%;
+    animation: slider 20s linear 2s;
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+}
+
+@keyframes slider {
+
+    0%{
+        transform: translateX(0);
+    }
+
+    /* 25%{
+        transform: translateX(0);
+    } */
+
+    30%{
+        transform: translateX(-100%);
+    }
+
+    /* 50%{
+        transform: translateX(-100%);
+    } */
+
+    55%{
+        transform: translateX(-200%);
+    }
+
+    /* 75%{
+        transform: translateX(-200%);
+    } */
+
+    80%{
+        transform: translateX(-300%);
+    }
+
+    100%{
+        transform: translateX(-300%);
+    }
+
+
+
+}
+
+[alt = 'on']
+{
+    height: 200px;
+    max-width: max-content;
+}
+
+
+
+[alt ^= row ]
+{
+    /* height: 256px; */
+    width: 210px;
+    /* flex-basis: 25%; */
+}
+
+
+#boxes
+{
+    background-color: gray;
+    
+}
+#fig
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: -320px 0px 0px 245px;
+    padding: 90px 0px 50px 0px;
+}
+
+#fig > img
+{
+    /* flex: 129px 1 300px; */
+    flex-basis: 25%;
+    margin-bottom: 70px;
+}
+
+#fig > figcaption
+{
+    position: absolute;
+    
+}
+
+#projects p::before
+{
+    content: "";
+    background: #000;
+    height: 1px;
+    width: 490px;
+    display: block;
+    position: absolute;
+    left: 140px;
+    margin-top: 11px;
+
+}
+
+#projects p::after
+{
+    content: "";
+    background: black;
+    height: 1px;
+    width: 490px;
+    display: block;
+    position: absolute;
+    left: 880px;
+    margin-top: -13px;
+}
+
+#projects > #disc
+{
+    margin: 2rem 0rem 0rem 43rem;
+    background-color: #36393B;
+}
+#slider_cont_one
+{
+   overflow: hidden;
+   margin: 50px 140px 0px 140px; 
+   transform: translate(0%, 0%);
+}
+
+#slider_one
+{
+    animation: slider_one 15s infinite 3s;
+}
+
+@keyframes slider_one {
+    
+    0%{
+        transform: translateX(0);
+    }
+
+    /* 25%{
+        transform: translateX(0);
+    } */
+
+    30%{
+        transform: translateX(-100%);
+    }
+
+    /* 50%{
+        transform: translateX(-100%);
+    } */
+
+    55%{
+        transform: translateX(-200%);
+    }
+
+    /* 75%{
+        transform: translateX(-200%);
+    } */
+
+    80%{
+        transform: translateX(-300%);
+    }
+
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+[alt = atom]
+{
+    position: absolute;
+    top: 500px;
+    left: 560px;
+    width: 32rem;
+
+}
+
+[alt = conc]
+{
+    position: absolute;
+    top: 500px;
+    width: 32rem;
+
+}
+
+#about
+{
+    background: url(https://www.bellitalia.net/wp-content/uploads/2021/12/copertina_news_prodotti.jpg) no-repeat;
+    background-size: cover;
+    height: 365px;
+    width: 100%;
+    position: absolute;
+    margin-top: 900px;
+    isolation: isolate;
+}
+
+#about::after
+{
+
+    content: '';
+    position: absolute;
+    background: #2d2b2d;
+    inset: 0;
+    z-index: -1;
+    opacity: .5;
+    height: 22.8rem;
+
+}
+
+/* #about::before
+{
+    content: '';
+    background-color: black;
+    opacity: 0.3;
+    background: url(https://www.bellitalia.net/wp-content/uploads/2021/12/copertina_news_prodotti.jpg) no-repeat ;
+    background-size: cover;
+} */
+
+#foot_in
+{
+    top: 78rem;
+    left: 9rem;
+}
+
+
+.figcaption
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+#planter
+{
+    margin: 17.5rem 0rem 0rem 8rem;
+}
+
+#bench
+{
+    margin: 17.5rem 0rem 0rem 29.5rem;
+}
+
+#bin
+{
+    margin: 17.5rem 0rem 0rem 51.5rem;
+    /* margin-left: 51.5rem; */
+}
+
+#table
+{
+    margin: 38rem 0rem 0rem 8rem;
+}
+
+#bus
+{
+
+    margin: 38rem 0rem 0rem 28rem;
+
+}
+
+#street
+{
+    margin: 38rem 0rem 0rem 48rem;
+
+}
+
+#tree
+{
+    margin: 59rem 0rem 0rem 6.3rem;
+
+}
+
+#ash
+{
+    margin: 59rem 0rem 0rem 29rem;
+
+}
+
+#board
+{
+    margin: 59rem 0rem 0rem 51.5rem;
+
+}
+
+#cycle
+{
+    margin: 80rem 0rem 0rem 6rem;
+
+}
+
+#game
+{
+    margin: 80rem 0rem 0rem 30rem;
+
+}
+
+#fountain
+{
+    margin: 80rem 0rem 0rem 50.5rem;
+
+}
+
+figcaption:hover
+{
+    color: gray;
+    cursor: pointer;
+}
+
+#fig > img
+{
+    cursor: pointer;
+}
+#boxes
+{
+    background-color: #eaeaea;
+}
+
+#disc:hover
+{
+    transform: scale(1.1,1.1);
+    transition-duration:.3s ;
+}
+
+#who
+{
+    line-height: 2;
+    color: #eaeaea;
+}
+
+#discover:hover
+{
+    transform: scale(1.1,1.1);
+    transition-duration:.3s ;
+}
+
+
+#are
+{
+    color: #eaeaea;
+}
+#we
+{
+    border-bottom: 2px solid white;
+    margin:1rem 0rem 0rem 46.2rem;
+    width: 35px;
+}
+
+#last
+{
+    background-color: #2b2b2b;
+}
+
+.fa-youtube,.fa-instagram,.fa-facebook
+{
+    margin-left: -7px;
+    line-height: 1.8;
+    color: #6b6b6b;
+}
+
+.fa-youtube:hover,.fa-instagram:hover,.fa-facebook:hover
+{
+    cursor: pointer;
+    color: black;
+}
+
+#foot address,li
+{
+    color: #6b6b6b;
+}
+
+#foot li:hover
+{
+    color: black;
+}
